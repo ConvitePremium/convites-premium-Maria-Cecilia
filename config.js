@@ -70,58 +70,53 @@ window.CONFIG = {
 // janela elegante com os links das lojas.
 // Ajuste a área pelo ?editor=1 escolhendo “Lojas sugeridas”.
 lojas: {
-  ativo: true,
-  titulo: "Sugestões de lojas",
-  texto: "Separamos algumas lojas como inspiração para quem desejar escolher um presente.",
-  links: [
-    {
-      nome: "Bella's Store",
-      url: "https://www.instagram.com/lojabellasstoreof?stkn=MWZyOHh3cGp1N3d2dQ==",
-      descricao: "Ver no Instagram"
-    },
-    {
-      nome: "Bella e Rica Acessórios",
-      url: "https://www.instagram.com/bellaericaacessorios_pb?stkn=MWF4ZXU4emxucDFtMg==",
-      descricao: "Ver no Instagram"
-    },
-    {
-      nome: "ClosetB / moda gringa",
-      url: "https://www.instagram.com/closetb_27?stkn=MTM5N29mN3lvdTZ5aQ==",
-      descricao: "Ver no Instagram"
-    },
-    {
-      nome: "Gata Pink - Moda Feminina",
-      url: "https://www.instagram.com/gatapinkstore?stkn=MnlnaDJvMjV3Mzlq",
-      descricao: "Ver no Instagram"
-    },
-    {
-      nome: "Thay Soares",
-      url: "https://www.instagram.com/usethaysoares?stkn=MXJ5cXh6eDNodjI4Yw==",
-      descricao: "Ver no Instagram"
-    },
-    {
-      nome: "Ablicia - Moda Gringa",
-      url: "https://www.instagram.com/a.blicia?stkn=MWl5ajh4YWZobGV5ZA==",
-      descricao: "Ver no Instagram"
-    },
-    {
-      nome: "Realce Calçados-Sape",
-      url: "https://www.instagram.com/realcecalcadossape?stkn=MXgwZXMxd3puN29tdA==",
-      descricao: "Ver no Instagram"
-    },
-    {
-      nome: "O boticario-Sape",
-      url: "https://www.instagram.com/oboticariosape?stkn=YnZsZWVodGkzbDJ5",
-      descricao: "Ver no Instagram"
-    }
-  ],
-  posicao: {
-    left: 16.8,
-    top: 74.0,
-    width: 66.0,
-    height: 8.2
-  }
-},
+    ativo: true,
+    titulo: "Sugestões de lojas",
+    texto: "Separamos algumas lojas como inspiração para quem desejar escolher um presente.",
+    links: [
+      {
+        "nome": "Bella's Store",
+        "url": "https://www.instagram.com/lojabellasstoreof?stkn=MWZyOHh3cGp1N3d2dQ==",
+        "descricao": "Ver no Instagram"
+      },
+      {
+        "nome": "Bella e Rica Acessórios",
+        "url": "https://www.instagram.com/bellaericaacessorios_pb?stkn=MWF4ZXU4emxucDFtMg==",
+        "descricao": "Ver no Instagram"
+      },
+      {
+        "nome": "ClosetB / moda gringa",
+        "url": "https://www.instagram.com/closetb_27?stkn=MTM5N29mN3lvdTZ5aQ==",
+        "descricao": "Ver no Instagram"
+      },
+      {
+        "nome": "Gata Pink - Moda Feminina",
+        "url": "https://www.instagram.com/gatapinkstore?stkn=MnlnaDJvMjV3Mzlq",
+        "descricao": "Ver no Instagram"
+      },
+      {
+        "nome": "Thay Soares",
+        "url": "https://www.instagram.com/usethaysoares?stkn=MXJ5cXh6eDNodjI4Yw==",
+        "descricao": "Ver no Instagram"
+      },
+      {
+        "nome": "Ablicia - Moda Gringa",
+        "url": "https://www.instagram.com/a.blicia?stkn=MWl5ajh4YWZobGV5ZA==",
+        "descricao": "Ver no Instagram"
+      },
+      {
+        "nome": "Realce Calçados-Sape",
+        "url": "https://www.instagram.com/realcecalcadossape?stkn=MXgwZXMxd3puN29tdA==",
+        "descricao": "Ver no Instagram"
+      },
+      {
+        "nome": "O boticario-Sape",
+        "url": "https://www.instagram.com/oboticariosape?stkn=YnZsZWVodGkzbDJ5",
+        "descricao": "Ver no Instagram"
+      }
+    ],
+    posicao: {"left":17.208923846845046,"top":78.94821098602944,"width":65.38659082967253,"height":5.668357986637059}
+  },
 
   // ----- TEXTOS DOS BOTÕES -----------------------------------------------
   // Rótulos que aparecem nos botões. Edite livremente.
@@ -162,8 +157,7 @@ lojas: {
         map: { left:43.558226024320525, top:64.83884550248719, width:12.544870809784289, height:7.487323330299423 },
         gift: { left:62.98461397951293, top:64.59789568749594, width:11.797118360623, height:8.183191974685592 },
         dress: { left:32.92012467551917, top:75.64507440505005, width:12.00160368410543, height:7.837950903820634 },
-        manual: { left:54.1922910711663, top:75.6450831845603, width:12.206057807507985, height:8.068101374968661 },
-        stores: { left:0, top:0, width:100, height:3 }
+        manual: { left:54.1922910711663, top:75.6450831845603, width:12.206057807507985, height:8.068101374968661 }
   },
 
   // ----- CONTAGEM REGRESSIVA ---------------------------------------------
