@@ -23,21 +23,21 @@ window.CONFIG = {
   // ----- IDENTIDADE DO CONVITE -------------------------------------------
   // Nome do aniversariante. Aparece no título da aba do navegador e nos
   // textos automáticos do convite.
-  nome: "Maria Helena",
+  nome: "Maria Cecília",
 
   // ----- WHATSAPP (CONFIRMAR PRESENÇA) -----------------------------------
   // numero: DDI + DDD + número, SÓ DÍGITOS (sem +, espaço, parênteses ou traço).
   //         Ex.: 55 (Brasil) + 31 (DDD) + 985657116 -> "5531985657116"
   // mensagem: texto que já vem pré-preenchido quando a pessoa abre o WhatsApp.
   whatsapp: {
-    numero: "5515991686144",
-    mensagem: "Olá! Confirmo minha presença no aniversário da Maria Helena."
+    numero: "5583993164384",
+    mensagem: "Olá! Confirmo minha presença no aniversário da Maria Cecília."
   },
 
   // ----- LOCALIZAÇÃO (BOTÃO MAPA) ----------------------------------------
   // Link completo do Google Maps. Abra o local no Maps, clique em "Compartilar"
   // -> "Copiar link" e cole aqui (mantenha as aspas).
-  mapa: "https://share.google/7oyi4t2qFT3dR1Bpf",
+  mapa: "https://maps.app.goo.gl/vvgM1X1E4NPXBaC5A",
 
   // ----- QUAIS TELAS APARECEM --------------------------------------------
   // video:     true  -> toca o vídeo (assets/video.mp4) depois da abertura.
@@ -61,24 +61,67 @@ window.CONFIG = {
   // posicao: ajuste pelo editor visual (?editor=1), escolhendo “PIX (copiar chave)”.
   pix: {
     ativo: true,
-    chave: "00020101021126580014br.gov.bcb.pix01365210c16e-d225-40ac-ae51-46aafcf6426c5204000053039865802BR5916MARIA H Z SANTOS6008SOROCABA62070503***6304E9FA",
+    chave: "michelcdssape2017@gmail.com",
     posicao: {"left":16.8,"top":64.0,"width":66.0,"height":8.2}
   },
 
   // ----- LOJAS SUGERIDAS (TELA DE PRESENTES) -----------------------------
-  // Cria um hotspot independente na tela de presentes. Ao clicar, abre uma
-  // janela elegante com quantos links de lojas você quiser.
-  // Ajuste a área pelo ?editor=1 escolhendo “Lojas sugeridas”.
-  lojas: {
-    ativo: true,
-    titulo: "Sugestões de lojas",
-    texto: "Separamos algumas lojas como inspiração para quem desejar escolher um presente.",
-    links: [
-      // { nome: "Nome da loja", url: "https://www.instagram.com/loja", descricao: "Ver no Instagram" },
-      // { nome: "Outra loja", url: "https://site-da-loja.com", descricao: "Visitar loja" }
-    ],
-    posicao: { left:16.8, top:74.0, width:66.0, height:8.2 }
-  },
+// Cria um hotspot independente na tela de presentes. Ao clicar, abre uma
+// janela elegante com os links das lojas.
+// Ajuste a área pelo ?editor=1 escolhendo “Lojas sugeridas”.
+lojas: {
+  ativo: true,
+  titulo: "Sugestões de lojas",
+  texto: "Separamos algumas lojas como inspiração para quem desejar escolher um presente.",
+  links: [
+    {
+      nome: "Bella's Store",
+      url: "https://www.instagram.com/lojabellasstoreof?stkn=MWZyOHh3cGp1N3d2dQ==",
+      descricao: "Ver no Instagram"
+    },
+    {
+      nome: "Bella e Rica Acessórios",
+      url: "https://www.instagram.com/bellaericaacessorios_pb?stkn=MWF4ZXU4emxucDFtMg==",
+      descricao: "Ver no Instagram"
+    },
+    {
+      nome: "ClosetB / moda gringa",
+      url: "https://www.instagram.com/closetb_27?stkn=MTM5N29mN3lvdTZ5aQ==",
+      descricao: "Ver no Instagram"
+    },
+    {
+      nome: "Gata Pink - Moda Feminina",
+      url: "https://www.instagram.com/gatapinkstore?stkn=MnlnaDJvMjV3Mzlq",
+      descricao: "Ver no Instagram"
+    },
+    {
+      nome: "Thay Soares",
+      url: "https://www.instagram.com/usethaysoares?stkn=MXJ5cXh6eDNodjI4Yw==",
+      descricao: "Ver no Instagram"
+    },
+    {
+      nome: "Ablicia - Moda Gringa",
+      url: "https://www.instagram.com/a.blicia?stkn=MWl5ajh4YWZobGV5ZA==",
+      descricao: "Ver no Instagram"
+    },
+    {
+      nome: "Realce Calçados-Sape",
+      url: "https://www.instagram.com/realcecalcadossape?stkn=MXgwZXMxd3puN29tdA==",
+      descricao: "Ver no Instagram"
+    },
+    {
+      nome: "O boticario-Sape",
+      url: "https://www.instagram.com/oboticariosape?stkn=YnZsZWVodGkzbDJ5",
+      descricao: "Ver no Instagram"
+    }
+  ],
+  posicao: {
+    left: 16.8,
+    top: 74.0,
+    width: 66.0,
+    height: 8.2
+  }
+},
 
   // ----- TEXTOS DOS BOTÕES -----------------------------------------------
   // Rótulos que aparecem nos botões. Edite livremente.
