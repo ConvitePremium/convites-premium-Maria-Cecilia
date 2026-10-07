@@ -332,7 +332,7 @@
       };
 
       // Hotspots (com override opcional do localStorage, para o editor)
-      const STORAGE_KEY = "convite-hotspots-v2:" + location.pathname;
+      const STORAGE_KEY = "convite-hotspots-v3:" + location.pathname;
       const $ = (id)=>document.getElementById(id);
       const buttons = {
         confirm: document.getElementById("confirmBtn"),
@@ -865,6 +865,7 @@
           e.preventDefault(); e.stopPropagation(); selectArea(key);
           const stageEl = key === "counter" ? $("countdownStage") :
             key === "pix" ? $("giftStage") :
+            key === "stores" ? $("giftStage") :
             key === "backGift" ? $("giftStage") :
             key === "backDress" ? $("dressStage") :
             key === "backManual" ? $("manualStage") :
@@ -912,7 +913,7 @@
       // Gera código pronto para colar dentro de CONFIG.hotspots no config.js
       function exportAreas(){
         const indent = "    ";
-        const buttonEntries = Object.entries(HOTSPOTS).filter(([k])=>k !== "counter" && k !== "pix" && !k.startsWith("back"));
+        const buttonEntries = Object.entries(HOTSPOTS).filter(([k])=>k !== "counter" && k !== "pix" && k !== "stores" && !k.startsWith("back"));
         const lines = buttonEntries.map(([k,v])=>{
           return indent + indent + k + ": { left:" + v.left + ", top:" + v.top + ", width:" + v.width + ", height:" + v.height + " }";
         }).join(",\n");
@@ -929,6 +930,14 @@
           "    chave: " + JSON.stringify(String(C.pix.chave || "")) + ",\n" +
           "    posicao: " + JSON.stringify(HOTSPOTS.pix) + "\n" +
           "  }," : "";
+        const storesCode = hasStores && HOTSPOTS.stores ?
+          "\n\nlojas: {\n" +
+          "    ativo: true,\n" +
+          "    titulo: " + JSON.stringify(String(C.lojas.titulo || "Sugestões de lojas")) + ",\n" +
+          "    texto: " + JSON.stringify(String(C.lojas.texto || "")) + ",\n" +
+          "    links: " + JSON.stringify(Array.isArray(C.lojas.links) ? C.lojas.links : [], null, 2).replace(/\n/g, "\n    ") + ",\n" +
+          "    posicao: " + JSON.stringify(HOTSPOTS.stores) + "\n" +
+          "  }," : "";
         const countdownCode = hasCountdown && c ?
           "\n\ncontagem: {\n" +
           "    dataEvento: \"" + C.contagem.dataEvento + "\",\n" +
@@ -937,7 +946,7 @@
           "    corLegenda: \"" + C.contagem.corLegenda + "\",\n" +
           "    posicao: { left:" + c.left + ", top:" + c.top + ", width:" + c.width + ", height:" + c.height + " }\n" +
           "  }" : "";
-        $("exportBox").value = "hotspots: {\n" + lines + "\n  }," + pixCode + backCode + countdownCode;
+        $("exportBox").value = "hotspots: {\n" + lines + "\n  }," + pixCode + storesCode + backCode + countdownCode;
         /* legacy export removed */
         return;
         $("exportBox").value =
