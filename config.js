@@ -84,7 +84,6 @@ lojas: {
         "url": "https://www.instagram.com/afavoritaconfeccoes?stkn=dTM3cHNnY3lxanZk",
         "descricao": "Ver no Instagram"
       },
-       },
       {
         "nome": "Dondocas Acessórios",
         "url": "https://www.instagram.com/dondocassacessorios?stkn=MmN6bXllOTRwYWRh",
