@@ -61,7 +61,7 @@ window.CONFIG = {
   // posicao: ajuste pelo editor visual (?editor=1), escolhendo “PIX (copiar chave)”.
   pix: {
     ativo: true,
-    chave: "michelcdssape2017@gmail.com",
+    chave: "5cbeb063-d14f-4282-b00d-a8ac98ab6044",
     posicao: {"left":18.6402587110623,"top":71.8250896805022,"width":62.3194825778754,"height":3.481935095363479}
   },
 
@@ -80,8 +80,14 @@ lojas: {
         "descricao": "Ver no Instagram"
       },
       {
-        "nome": "Bella e Rica Acessórios",
-        "url": "https://www.instagram.com/bellaericaacessorios_pb?stkn=MWF4ZXU4emxucDFtMg==",
+        "nome": "A Favorita",
+        "url": "https://www.instagram.com/afavoritaconfeccoes?stkn=dTM3cHNnY3lxanZk",
+        "descricao": "Ver no Instagram"
+      },
+       },
+      {
+        "nome": "Dondocas Acessórios",
+        "url": "https://www.instagram.com/dondocassacessorios?stkn=MmN6bXllOTRwYWRh",
         "descricao": "Ver no Instagram"
       },
       {
